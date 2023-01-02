@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width:1500px;
+    height:800px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<script>
+
+// load and setup map layers
+initMap();
+
+/*
+my cords is a label/ID for what we store, which is the object stored in variable cords,
+whose value is {"k1":[{"latitude":38.79351, "longitude":-121.28815},...], which consists of a key called k1
+with an array as its value: [{"latitude":38.79351, "longitude":-121.28815},..]
+*/
+var cords = {"k1":[
+  {"latitude":38.79351, "longitude":-121.28815},
+  {"latitude":38.79155, "longitude":-121.21186},
+  {"latitude":38.79067, "longitude":-121.21212},
+  {"latitude":38.79024, "longitude":-121.21272},
+  {"latitude":38.79083, "longitude":-121.21367},
+  {"latitude":38.79117, "longitude":-121.21421},
+  {"latitude":38.79170, "longitude":-121.21405},
+  {"latitude":38.79162, "longitude":-121.21328},
+  {"latitude":38.79213, "longitude":-121.21333},
+  {"latitude":38.79201, "longitude":-121.21249},
+  {"latitude":38.79223, "longitude":-121.21206},
+  {"latitude":38.79186, "longitude":-121.21152},
+  {"latitude":38.79136, "longitude":-121.21103}
+]};
+
+
+window.localStorage.setItem("myData",JSON.stringify(cords));
+
+/*
+next [presumably after closing the browser, and reloading our html]
+we can fetch the stored data, just by supplying its key:
+*/
+var dataStored = JSON.parse(window.localStorage.getItem("myData"));
+
+// we can iterate through our array [of points], like so:
+var cord_list = dataStored.k1;
+for(var i = 0; i <  cord_list.length; i++) {
+  addMarker(cord_list[i].latitude, cord_list[i].longitude);
+}
+
+// here's how to plot points on a map, using OpenLayers:
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+        map.setCenter(
+            new OpenLayers.LonLat(-121.210872, 38.792832).transform(
+                new OpenLayers.Projection("EPSG:4326"),
+                map.getProjectionObject()
+            ), 15
+        );
+}
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"),
+                map.getProjectionObject()
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 100);
+}
+
+</script>
+
+</body>
+
+</html>

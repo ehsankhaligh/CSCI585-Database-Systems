@@ -1,0 +1,39 @@
+
+ 
+HW1: 6 points
+In this assignment, you need to create a conceptual Entity-Relational (ER) diagram, to model the scenario described below; note that your design is not going to be at an implementation level, ie. you don't have to worry about representing your design using relational tables (including bridges) - you will only need to come up with entities and relationships.
+Please submit your work as a single image file in .jpg or .png form that shows the entire diagram, via D2L Dropbox (not via Blackboard). ALSO include a README.txt that contains any design choices you want to highlight, and/or assumptions you made [if the ER diagram were 'code', this would be 'comments'].
+You can create the ER diagram using any software of your choice, including:
+yEd (http://www.yworks.com/products/yed)
+draw.io (browser-based)
+Lucidchart (browser-based)
+Vertabelo (also entirely online)
+DIA
+Project Mogwai (https://github.com/mirkosertic/MogwaiERDesignerNG)
+E/R Assistant (Windows only: https://highered.mheducation.com/sites/0072942207/student_view0/e_r_assistant.html)
+Visio
+https://erdplus.com/standalone - browser-based :)
+...
+After constructing the ER diagram, save, or take a screengrab snapshot, submit it [as a .jpg or .png image file].
+Note that you can even draw your diagram legibly on paper and take a photo of it and submit that - but having said that, I'd encourage you to use a diagramming tool, that will make your result look professional, and have you follow industry practice.
+You need to use Crow's Foot Notation for the ER diagram. For each relationship, indicate the cardinality (minimum and maximum participation), also via Crow's Foot symbols - use this infographic (from www.vivekmchawla.com/) as a guide [you don't need to denote cardinality as (1,1) etc., instead, you would use the notation shown in the infographic, ie. use symbols such as |O and ||].
+How much detail should your diagram contain? Use this sample as a guide (eg. you do not need to indicate data types for attributes).
+You (a database designer/analyst) have been hired by the owners of a small 'STEM' organization that is interested in offering programming courses in their community, during summer vacation [the classes will be aimed towards high school students who will be on summer break].
+Rather than offer "the usual" (Scratch, Java, Python, Ruby...) coding classes, the owners want to make the classes more fun and engaging - they plan on making the classes be centered around electronic music creation - using software as well as hardware. Students will take classes, and also work on hands-on projects (each class or project will last a week, the entire curriculum will last 6 weeks).
+Below is what the owners have in mind - if their specifications seem incomplete, you are free (expected, in fact) to make relevant assumptions to help create your design [be sure to document them].
+Students will sign up for a mix of coding classes, and projects. Coding would be taught using PureData ('Pd'), Csound, SuperCollider. Each project would be based on 'synth' modules - hardware boards that each have a specific functionality, which can be wired together in multiple ways in order to result in music (eg. EDM). Students pay a single flat fee at the beginning, for the entire curriculum.
+Instructors (faculty) would teach a variety of coding classes throughout the day, and also oversee the hardware projects. Each class has a textbook. An instructor might specify a textbook for more than one class that he/she teaches (eg. the same Pd book could be used for Pd I and for Pd II). A class would have multiple instructors, and each instructor could potentially use a different text (their favorite) for the same class (whch those multiple instructors would teach).
+Instructors would get paid based on hours they teach, and hours they supervise projects (the supervision pays a higher rate); all instructors are paid identical rates.
+Projects are done in shared fashion, ie. as a group (typically containing 4 students who all sign up for a common project, eg. a 'Creating music using granular synthesis'). Students would sit around large, square, numbered tables (1,2..) assigned to them, to work on projects; at the start of the term, each table would be provided a big plastic storage box containing all the parts (modular synths etc.) for the project the students will work on; at the end of the term, students will return all the parts presumably in good working order, otherwise they would be charged for damaged items.
+Each project would require parts specific to it - synth modules, enclosure, power supply, patch cables, speakers, A-to-D converter (to record music), etc.
+The owners of the institution plan to order project parts from several online suppliers (such as Perfect Circuit, Sweetwater, Amazon, Reverb) - there is expected to be multiple orders placed with multiple vendors, to procure all the items.
+There are several rooms that will be available for the classes and projects - students will be provided a schedule that will list where and when these will be.
+There is a small library that contains books about electronic music, coding, etc. A student can check out up to 4 books at a time, which need to be returned in 2 weeks.
+At the end of the curriculum, students will be required to rate their instructors, courses, and projects, using a single score for each (one to five stars).
+That's the description- what the owners envision! Your task - help them manage the data that will be associated with their business.
+Note that there isn't a single correct/perfect design, or even a single 'good' design - any design involves tradeoffs which determine their efficacy/viability. You are free to make intelligent choices about what data (attributes) to store where (entities), and how to connect all the pieces (relations). Note too that some requirements stated above, might not be able to be captured in an ER diagram - this is fine. Be sure to document your design decisions (they would serve to provide rationale for "why you created your design the way you did"). Also, feel free to come up with an EER diagram if you see a need for one.
+Please do not plagiarize, 'work together', etc. If we see that your solution resembles anything else, we will need to report you to SJACS, etc. How to avoid this? Simply do your own work! This is a design problem, so you have much latitude in coming up with one that works - enjoy the process!
+Submission checklist:
+.jpg or .png pic of your ER diagram
+README.txt description file
+You can post questions (and answer others' :)) on Piazza, under 'hw1'. HAVE FUN!

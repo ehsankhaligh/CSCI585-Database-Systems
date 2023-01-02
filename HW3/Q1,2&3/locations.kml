@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.28815,38.79351</coordinates></Point>
+</Placemark>
+<Placemark><name>campus center</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21186,38.79155</coordinates></Point>
+</Placemark>
+<Placemark><name>Ridley</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21212,38.79067</coordinates></Point>
+</Placemark>
+<Placemark><name>Theater</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21272,38.79024</coordinates></Point>
+</Placemark>
+<Placemark><name>n building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21367,38.79083</coordinates></Point>
+</Placemark>
+<Placemark><name>V Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21421,38.79117</coordinates></Point>
+</Placemark>
+<Placemark><name>MT Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21405,38.79170</coordinates></Point>
+</Placemark>
+<Placemark><name>B Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21328,38.79162</coordinates></Point>
+</Placemark>
+<Placemark><name>C Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21333,38.79213</coordinates></Point>
+</Placemark>
+<Placemark><name>Winstead</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21249,38.79201</coordinates></Point>
+</Placemark>
+<Placemark><name>Weaver Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21206,38.79223</coordinates></Point>
+</Placemark>
+<Placemark><name>Bell</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21152,38.79186</coordinates></Point>
+</Placemark>
+<Placemark><name>K Bulding</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-121.21103,38.79136</coordinates></Point>
+</Placemark>
+</Document></kml>

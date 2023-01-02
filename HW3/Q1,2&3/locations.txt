@@ -1,0 +1,15 @@
+I am A DEN Student and locations are chosen from Sierra Community college near me.
+
+1. K Building (-121.21103,38.79136)
+2. Campus Bell (-121.21152,38.79186)
+3. Weaver Building (-121.21206,38.79223)
+4. Winstead Center (-121.21249,38.79201)
+5. C Building(-121.21333,38.79213)
+6. B Building(-121.21328,38.79162)
+7. MT Building (-121.21405,38.79170)
+8. V Building (-121.21421,38.79117)
+9. Natural History museum or n building (-121.21367,38.79083)
+10. Theater Building (-121.21272,38.79024)
+11. Ridley Gallery (-121.21212,38.79067)
+12. campus center (-121.21186,38.79155)
+13. Home (-121.28815,39.79351)

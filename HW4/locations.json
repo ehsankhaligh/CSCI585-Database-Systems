@@ -1,0 +1,80 @@
+[
+ {
+   "name": "K Building",
+   "popularity": 99,
+   "loc":[38.79136,-121.21103],
+   "locationType": "building"
+ },
+ {
+   "name": "Campus Bell",
+   "popularity": 94,
+   "loc":[38.79186,-121.21152],
+   "locationType": "Bell"
+ },
+ {
+   "name": "Weaver Building",
+   "popularity": 92,
+   "loc":[38.79223,-121.21206],
+   "locationType": "building"
+ },
+ {
+   "name": "Winstead Center",
+   "popularity": 90,
+   "loc":[38.79201,-121.21249],
+   "locationType": "Center"
+ },
+ {
+   "name": "C Building",
+   "popularity": 89,
+   "loc":[38.79213,-121.21333],
+   "locationType": "building"
+ },
+ {
+   "name": "B Building",
+   "popularity": 86,
+   "loc":[38.79162,-121.21328],
+   "locationType": "building"
+ },
+ {
+   "name": "MT Building",
+   "popularity": 85,
+   "loc":[38.79170,-121.21405],
+   "locationType": "building"
+ },
+ {
+   "name": "V Building",
+   "popularity": 80,
+   "loc":[38.79117,-121.21421],
+   "locationType": "building"
+ },
+ {
+   "name": "N building",
+   "popularity": 75,
+   "loc":[38.79083,-121.21367],
+   "locationType": "building"
+ },
+ {
+   "name": "Theater Building",
+   "popularity": 70,
+   "loc":[38.79024,-121.21272],
+   "locationType": "building"
+ },
+ {
+   "name": "Ridley Gallery",
+   "popularity": 65,
+   "loc":[38.79067,-121.21212],
+   "locationType": "Galery"
+ },
+ {
+   "name": "campus center",
+   "popularity": 60,
+   "loc":[38.79155,-121.21186],
+   "locationType": "Welcome"
+ },
+ {
+   "name": "Hoome",
+   "popularity": 10,
+   "loc":[38.79351,-121.28815],
+   "locationType": "home"
+ }
+]

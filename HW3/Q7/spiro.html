@@ -1,0 +1,40 @@
+<html>
+   <body>
+      <canvas id="canvas" width="300" height="300"></canvas>
+      <pre id="numbers" style="width:30%"></pre>
+
+      <script>
+         function display(arg) {
+             var id = document.getElementById('numbers'); //get HTML element by ID
+             id.innerHTML += arg + "\n"; //display (print) numbers
+         }
+
+         (function shapeDraw() {
+           var canvas = document.getElementById('canvas');
+           if (canvas.getContext){
+
+             //more info: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath
+             var ctx = canvas.getContext('2d');
+
+             ctx.beginPath();
+             ctx.strokeStyle = 'blue';
+
+             var R=6, r=1, a=8;
+             var x0=R+r-a, y0=0;
+             ctx.moveTo(150+x0,150+y0);
+
+             var cos=Math.cos, sin=Math.sin, pi=Math.PI, nRev=16;
+             for(var t=0.0;t<(pi*nRev);t+=0.01) {
+               var x = (R+r)*cos((r/R)*t) - a*cos((1+r/R)*t);
+               var y = (R+r)*sin((r/R)*t) - a*sin((1+r/R)*t);
+               ctx.lineTo(150+10*x,150+10*y); //multiply to make size larger visibile
+               x_new = (-118.285445)+((150+10*x)-150)*0.00001;  //multiply to adjust the size 
+               y_new = (34.020550) + ((150+10*y)-150)*0.00001;  //multiply to adjust the size
+               display(x_new + "," + y_new + ",0"); //print #s to copy moving to KML file
+             }
+            ctx.stroke();
+           }
+         })();
+      </script>
+   </body>
+</html>
