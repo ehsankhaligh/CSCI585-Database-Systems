@@ -8,4 +8,5 @@ Assignments:
 1) **ER Diagram Design:** <br/>https://github.com/ehsankhaligh/CSCI585-Database-Systems/tree/main/HW1<br/><br/>
 2) **SQL Query:**<br/>https://github.com/ehsankhaligh/CSCI585-Database-Systems/tree/main/HW2<br/><br/>
 3) **Geospatial Data:**<br/>https://github.com/ehsankhaligh/CSCI585-Database-Systems/tree/main/HW3<br/><br/>
-4) **Stock Trading App:** Mobile App Development (Android) <br>Demo: https://www.youtube.com/watch?v=wHYBjkuOhWY <br/><br/>
+4) **MongoDB NoSql:**<br>https://github.com/ehsankhaligh/CSCI585-Database-Systems/tree/main/HW4<br/><br/>
+5) **ML Image Classification:**<br>https://github.com/ehsankhaligh/CSCI585-Database-Systems/tree/main/HW5<br/><br/>
